@@ -1,0 +1,23 @@
+[
+    {
+      "portal": "Portal Benefício",
+      "descricao": "Nosso portal proporciona total controle sobre os benefícios dos colaboradores, garantindo uma gestão eficaz e segura.",
+      "link": "https://portalbeneficios.uauh.com.br/Account/Login?ReturnUrl=%2F"
+    },
+    {
+      "portal": "Portal Credenciado",
+      "descricao": "Nosso portal oferece todas as ferramentas necessárias para um controle financeiro eficiente e transparente.",
+      "link": "https://credenciado.uauh.com.br/Login?ReturnUrl=%2F"
+    },
+    {
+      "portal": "Portal Frota",
+      "descricao": "Nosso portal permite a administração da sua frota e total controle das operações",
+      "link": "https://portalfrota.uauh.com.br/"
+    },
+    {
+      "portal": "Portal Usuário",
+      "descricao": "Nosso portal oferece todas as ferramentas para você gerenciar seus benefícios com facilidade e praticidade.",
+      "link": "https://portalusuario.uauh.com.br/entrar/"
+    }
+  ]
+  

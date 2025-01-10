@@ -1,0 +1,51 @@
+.politica {
+  scroll-snap-align: start;
+  padding: 2rem 4rem;
+
+  @include respond(tab-land) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  & > article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    @include respond(phone) {
+      gap: 1rem;
+    }
+
+    & > span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      & > h1 {
+        color: $color-black;
+        font-size: 1.25rem;
+        font-weight: 800;
+
+        @include respond(tab-land) {
+          font-size: 1rem;
+        }
+      }
+
+      & > p,
+      & > ul > li {
+        color: $color-gray-800;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

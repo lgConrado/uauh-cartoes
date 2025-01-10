@@ -1,0 +1,47 @@
+[
+    {
+      "beneficio": "Alimentação",
+      "tema": "laranja",
+      "descricao": [
+        "Segurança no PAT: Benefícios assegurados pelo Programa de Alimentação do Trabalhador.",
+        "Escolha Personalizada: Funcionários têm liberdade para selecionar os produtos que preferem.",
+        "Flexibilidade Financeira: Ajuste o valor mensal conforme a necessidade, sem se preocupar com a quantidade de dias trabalhados.",
+        "Redução de Custos: Economize com impostos e logística ao evitar cestas básicas.",
+        "Cobertura Nacional: Aceito em todo o Brasil, incluindo nas redes Cielo, Stone e Rede."
+      ]
+    },
+    {
+      "beneficio": "Multi benefícios",
+      "tema": "azul",
+      "descricao": [
+        "Segurança com os Benefícios do PAT: Aproveite os benefícios garantidos pelo Programa de Alimentação do Trabalhador.",
+        "Escolha Livre de Produtos: Total liberdade para os usuários escolherem os produtos que preferirem.",
+        "Valor Mensal Personalizado: Defina o valor ideal para sua empresa, sem depender dos dias úteis.",
+        "Redução de Custos: Economize em impostos e despesas logísticas.",
+        "Aceitação Nacional: Ampla aceitação em todo o Brasil, com compatibilidade com Cielo, Stone e Rede."
+      ]
+    },
+    {
+      "beneficio": "Transporte",
+      "tema": "azul",
+      "descricao": [
+        "Controle Total de Abastecimentos: Gerencie todos os abastecimentos da sua frota ou veículo de serviço com facilidade.",
+        "Recargas Online e Gestão de Usuários: Realize recargas e gerencie usuários através de logins e senhas.",
+        "Gestão Eficiente de Frota: Acompanhe movimentações e compare preços de combustíveis com o sistema de gestão Frota."
+      ]
+    },
+    {
+      "beneficio": "Troco frete",
+      "tema": "azul",
+      "descricao": [
+        "Uso em Postos e Outros Estabelecimentos: Ampla aceitação em postos de combustíveis e diversos pontos comerciais.",
+        "Recebimento Rápido e Fácil: Simplicidade e agilidade no acesso ao dinheiro.",
+        "Opção de Saque: Possibilidade de sacar o valor quando necessário.",
+        "Segurança no PAT: Benefícios garantidos pelo Programa de Alimentação do Trabalhador.",
+        "Flexibilidade no Valor Mensal: Defina o valor que melhor se adapta às necessidades da sua empresa.",
+        " Redução de Custos Operacionais: Economize em impostos e despesas com logística.",
+        "Cobertura Nacional: Aceito em todo o Brasil, incluindo redes como Cielo, Stone e Rede."
+      ]
+    }
+  ]
+  

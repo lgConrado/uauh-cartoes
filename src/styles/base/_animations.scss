@@ -1,0 +1,38 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-to-bottom {
+  0% {
+    opacity: 0;
+    margin-top: -12rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slide-to-right {
+  0% {
+    opacity: 0;
+    margin-left: -16rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes button-pulse {
+  0% {
+    box-shadow: 0 0 0 1.25rem rgba($color-white, 0.32);
+  }
+}

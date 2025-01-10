@@ -1,0 +1,83 @@
+.button {
+  appearance: none;
+  border: 0.125rem solid transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease-in-out;
+
+  &--c {
+    &--laranja {
+      background-color: $color-c-secondary;
+      box-shadow: 0 0.25rem 1rem rgba($color-c-secondary, 0.24);
+      color: $color-white;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
+
+      &:hover:not(:focus) {
+        background-color: $color-orange-500;
+        border-color: $color-c-secondary;
+        box-shadow: 0 0.25rem 1rem rgba($color-c-secondary, 0.48);
+        transform: scale(1.1) translateY(-0.5rem);
+      }
+
+      &:focus {
+        background-color: $color-orange-600;
+        box-shadow: 0 0.25rem 1rem rgba($color-c-secondary, 0.32);
+        transform: scale(1.1) translateY(-0.25rem);
+      }
+    }
+
+    &--azul {
+      background-color: $color-c-primary-dark;
+      box-shadow: 0 0.25rem 1rem rgba($color-c-primary-dark, 0.24);
+      color: $color-white;
+      font-weight: 500;
+
+      @include respond(tab-land) {
+        font-size: 1rem;
+      }
+
+      &:hover:not(:focus) {
+        box-shadow: 0 0.25rem 1rem rgba($color-c-primary-dark, 0.48);
+        transform: scale(1.1) translateY(-0.5rem);
+      }
+
+      &:focus {
+        box-shadow: 0 0.25rem 1rem rgba($color-c-primary-dark, 0.32);
+        transform: scale(1.1) translateY(-0.25rem);
+      }
+    }
+  }
+
+  &--b {
+    &--primary {
+      animation: button-pulse 2s infinite;
+      animation-delay: 2s;
+      box-shadow: 0 0 0 2em transparent;
+      background-color: $color-white;
+      box-shadow: 0 0.25rem 1rem rgba($color-white, 0.24);
+      color: $color-b-primary;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
+
+      &:hover:not(:focus) {
+        animation: none;
+        box-shadow: 0 0.25rem 1rem rgba($color-white, 0.48);
+        transform: scale(1.1) translateY(-0.5rem);
+      }
+
+      &:focus {
+        animation: none;
+        box-shadow: 0 0.25rem 1rem rgba($color-white, 0.32);
+        transform: scale(1.1) translateY(-0.25rem);
+      }
+    }
+  }
+}
