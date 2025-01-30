@@ -68,7 +68,7 @@ const FooterCartoes = () => {
               Fale conosco
             </h4>
             <ul>
-              <li className="text--cinza">0800 360 9000</li>
+              <li className="text--cinza">0800 361 9000</li>
               <li className="text--cinza">+55 (44) 9.9185-8651</li>
               <li className="text--cinza">contato@uauh.com.br</li>
             </ul>
@@ -76,7 +76,7 @@ const FooterCartoes = () => {
         </div>
       </div>
       <div className="footer__banner footer--c__banner">
-        Copyright &copy; 2024. Todos os direitos reservados.
+        Copyright &copy; 2025. Todos os direitos reservados.
         <br />
         <b>MH Administradora de Cartões Ltda - CNPJ: 34.180.727/0001-10</b>
       </div>

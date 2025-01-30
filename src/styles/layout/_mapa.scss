@@ -1,0 +1,47 @@
+.mapa {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100vh;
+  justify-content: top;
+  scroll-snap-align: start;
+  padding: 2rem 4rem;
+
+  @include respond(tab-land) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__mapa {
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    width: 75rem;
+    //border: 0.125rem solid rgba($color-c-secondary, 0.8);
+    box-shadow: 0 0.25rem 1rem rgba($color-black, 0.24);
+ 
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+}

@@ -21,7 +21,8 @@ const BannerCartoesRede = () => {
           </h2>
           <div className="banner--c--rede__content__button">
             <a
-              href="https://site.uauh.com.br/rede-aceitacao/"
+              //href="https://site.uauh.com.br/rede-aceitacao/"
+              href="mapa"
               target="_blank"
               rel="noopener noreferrer"
             >
