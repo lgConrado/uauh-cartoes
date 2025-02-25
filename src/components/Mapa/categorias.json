@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "nome": "Postos de Combustível"
+    },
+    {
+      "id": 2,
+      "nome": "Restaurantes"
+    },
+    {
+      "id": 3,
+      "nome": "Lojas"
+    },
+    {
+      "id": 4,
+      "nome": "Mercados"
+    }
+  ]
