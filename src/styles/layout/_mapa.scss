@@ -108,4 +108,34 @@
     display: flex;
     justify-content: center;
   }
+
+  // Estilos para a InfoWindow
+  &__info-window {
+    font-family: 'Lato', sans-serif; // Substitua pela fonte do projeto
+    color: $color-black;
+
+    strong {
+      font-size: 1.2rem;
+      color: $color-c-primary-dark; // Cor do título
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.25rem 0;
+    }
+
+    .cartoes-aceitos {
+      margin-top: 1rem;
+
+      strong {
+        font-size: 1rem;
+        color: $color-c-primary-dark;
+      }
+
+      p {
+        margin: 0.25rem 0;
+      }
+    }
+  }
 }

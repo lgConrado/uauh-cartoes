@@ -36,6 +36,7 @@ const MapaRede = () => {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState<string>("");
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [searchBox, setSearchBox] = useState<google.maps.places.SearchBox | null>(null);
+  const [infoWindow, setInfoWindow] = useState<google.maps.InfoWindow | null>(null); // Única instância de InfoWindow
 
   // Mapeamento de categorias para ícones
   const categoriasParaIcones: { [key: string]: string } = {
@@ -103,6 +104,10 @@ const MapaRede = () => {
           console.error("Campo de pesquisa não encontrado.");
         }
 
+        // Criar uma única instância de InfoWindow
+        const infoWindowInstance = new window.google.maps.InfoWindow();
+        setInfoWindow(infoWindowInstance);
+
         setMap(mapInstance);
       } else {
         console.error(
@@ -120,7 +125,7 @@ const MapaRede = () => {
 
   // Adicionar marcadores ao mapa
   useEffect(() => {
-    if (!map || estabelecimentosData.length === 0) return;
+    if (!map || estabelecimentosData.length === 0 || !infoWindow) return;
 
     // Limpar marcadores anteriores
     const markers: google.maps.Marker[] = [];
@@ -140,27 +145,34 @@ const MapaRede = () => {
       if (isNaN(lat) || isNaN(lng)) return;
 
       // Escolher o ícone do marcador com base na categoria
-      const icon = categoriasParaIcones[estabelecimento.categoria] || null;
+      const icon = categoriasParaIcones[estabelecimento.categoria] || undefined;
 
       const marker = new window.google.maps.Marker({
         position: { lat, lng },
         map: map,
-        title: estabelecimento.nome,
+        title: estabelecimento.nomeFantasia,
         icon: icon,
       });
 
-      const infoWindow = new window.google.maps.InfoWindow({
-        content: `
-          <div>
+      marker.addListener("click", () => {
+        // Fecha o InfoWindow atual (se estiver aberto)
+        infoWindow.close();
+
+        // Define o conteúdo do InfoWindow
+        infoWindow.setContent(`
+          <div class="mapa__info-window">
             <strong>${estabelecimento.nomeFantasia}</strong>
             <p>${estabelecimento.endereco}, ${estabelecimento.numero}</p>
             <p>${estabelecimento.cidade}, ${estabelecimento.estado}</p>
             <p>Telefone: ${estabelecimento.telefone}</p>
+            <div class="cartoes-aceitos">
+              <strong>Cartões Aceitos:</strong>
+              <p>Cartão 1, Cartão 2, Cartão 3</p> <!-- Substitua pelos cartões reais -->
+            </div>
           </div>
-        `,
-      });
+        `);
 
-      marker.addListener("click", () => {
+        // Abre o InfoWindow no marcador clicado
         infoWindow.open(map, marker);
       });
 
@@ -171,7 +183,7 @@ const MapaRede = () => {
     return () => {
       markers.forEach((marker) => marker.setMap(null));
     };
-  }, [map, estabelecimentosData, categoriaSelecionada]);
+  }, [map, estabelecimentosData, categoriaSelecionada, infoWindow]);
 
   return (
     <section className="mapa">
@@ -199,8 +211,11 @@ const MapaRede = () => {
               if (e.key === "Enter") {
                 // Disparar a busca ao pressionar Enter
                 const input = document.getElementById("search-input") as HTMLInputElement;
-                if (input && searchBox) {
-                  searchBox.setBounds(map?.getBounds());
+                if (input && searchBox && map) {
+                  const bounds = map.getBounds();
+                  if (bounds) {
+                    searchBox.setBounds(bounds);
+                  }
                   searchBox.setQuery(input.value);
                 }
               }
@@ -211,8 +226,11 @@ const MapaRede = () => {
             onClick={() => {
               // Disparar a busca ao clicar no ícone
               const input = document.getElementById("search-input") as HTMLInputElement;
-              if (input && searchBox) {
-                searchBox.setBounds(map?.getBounds());
+              if (input && searchBox && map) {
+                const bounds = map.getBounds();
+                if (bounds) {
+                  searchBox.setBounds(bounds);
+                }
                 searchBox.setQuery(input.value);
               }
             }}
