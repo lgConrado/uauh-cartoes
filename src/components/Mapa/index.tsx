@@ -56,7 +56,7 @@ const MapaRede = () => {
 
   // Inicializar o mapa e o campo de pesquisa
   useEffect(() => {
-    const apiKey = ""; // Substitua pela sua chave de API
+    const apiKey = "AIzaSyBPXRWWaCPq7Bmq6I_WbTDika7jKUyaCK8"; // Substitua pela sua chave de API
     const script = document.createElement("script");
     script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
     script.async = true;
@@ -165,10 +165,6 @@ const MapaRede = () => {
             <p>${estabelecimento.endereco}, ${estabelecimento.numero}</p>
             <p>${estabelecimento.cidade}, ${estabelecimento.estado}</p>
             <p>Telefone: ${estabelecimento.telefone}</p>
-            <div class="cartoes-aceitos">
-              <strong>Cartões Aceitos:</strong>
-              <p>Cartão 1, Cartão 2, Cartão 3</p> <!-- Substitua pelos cartões reais -->
-            </div>
           </div>
         `);
 

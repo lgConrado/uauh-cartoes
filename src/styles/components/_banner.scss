@@ -211,13 +211,10 @@
 
       &--azul {
         background-color: $color-c-primary-dark;
-        background-image: linear-gradient(to right, $color-c-primary-dark,$color-c-primary-light);
       }
 
       &--laranja {
-        background-color: $color-c-secondary;
-        // background-image: linear-gradient(to left, $color-orange-500,$color-orange-300);
-        background-image: linear-gradient(to right, $color-c-primary-dark,$color-c-primary-light);
+        background-color: $color-c-secondary-dark;
       }
 
       &:nth-child(odd) &__figure {

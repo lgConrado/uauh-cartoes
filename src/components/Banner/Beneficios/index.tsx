@@ -76,7 +76,7 @@ const BannerCartoesBeneficios = () => {
               <Figure theme="branca" />
             </div>
             <div className="banner--c--beneficios__figure banner--c--beneficios__figure--laranja">
-              <Figure theme="laranja" />
+              <Figure theme="laranja" /> 
             </div>
           </section>
         );

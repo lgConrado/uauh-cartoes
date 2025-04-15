@@ -5,6 +5,7 @@ import BannerAppCartoes from "../../components/Banner/App";
 import BannerCartoesRede from "../../components/Banner/Rede";
 import { useEffect } from "react";
 import FooterCartoes from "../../components/Footer";
+import CookieBanner from "../../components/Cookie";
 
 const Cartoes = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Cartoes = () => {
   return (
     <>
       <main className="main">
+        <CookieBanner/>
         <BannerCartoesPrincipal />
         <Portais />
         <div>
