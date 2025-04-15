@@ -56,7 +56,7 @@ const MapaRede = () => {
 
   // Inicializar o mapa e o campo de pesquisa
   useEffect(() => {
-    const apiKey = "AIzaSyBPXRWWaCPq7Bmq6I_WbTDika7jKUyaCK8"; // Substitua pela sua chave de API
+    const apiKey = ""; // Substitua pela sua chave de API
     const script = document.createElement("script");
     script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
     script.async = true;

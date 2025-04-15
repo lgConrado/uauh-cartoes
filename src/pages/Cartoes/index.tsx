@@ -25,16 +25,14 @@ const Cartoes = () => {
   return (
     <>
       <main className="main">
-        <CookieBanner/>
+        <CookieBanner />
         <BannerCartoesPrincipal />
         <Portais />
-        <div>
-          <BannerCartoesBeneficios />
-          <BannerAppCartoes />
-          <BannerCartoesRede />
-        </div>
+        <BannerCartoesBeneficios />
+        <BannerAppCartoes />
+        <BannerCartoesRede />
+        <FooterCartoes />
       </main>
-      <FooterCartoes />
     </>
   );
 };

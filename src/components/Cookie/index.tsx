@@ -17,7 +17,7 @@ const CookieBanner: React.FC = () => {
     <div style={bannerStyles.container}>
       <p style={bannerStyles.text}>
         Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com o uso de cookies.{' '}
-        <a href="/bank/politica-privacidade" style={bannerStyles.link} target="_blank" rel="noopener noreferrer">
+        <a href="/politica-privacidade" style={bannerStyles.link} target="_blank" rel="noopener noreferrer">
           Saiba mais
         </a>
       </p>

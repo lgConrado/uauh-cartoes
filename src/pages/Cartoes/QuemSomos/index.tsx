@@ -5,7 +5,7 @@ const QuemSomosCartoes = () => {
   return (
     <>
       <QuemSomosUauhCartoes />
-      <FooterCartoes />
+      <FooterCartoes/>
     </>
   );
 };
